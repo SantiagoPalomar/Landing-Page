@@ -5,9 +5,250 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
     <!-- ir agregando su seccion en la posicion correcta y verificar que no afecte con el trabajo de los demas gracias -->
 </head>
-<body>
-    
+<body class="flex flex-col" >
+  <nav class="bg-gray-800 text-white">
+    <div class="flex justify-end sm:justify-between items-center px-6 py-5 sm:mx-10">
+      
+      <!-- Menú de escritorio -->
+      <div class="hidden sm:flex justify-between w-full">
+        <ul class="flex space-x-6 items-center">
+          <li><a href="#" class="hover:text-gray-300">Catálogo</a></li>
+          <li><a href="#" class="hover:text-gray-300">¿Quiénes somos?</a></li>
+          <li><a href="#" class="hover:text-gray-300">Contacto</a></li>
+        </ul>
+        <div class="flex space-x-6 ">
+          <a href="#" class="hover:text-gray-300">Iniciar Sesion</a>
+        </div>
+      </div>
+      
+      <!-- Menú móvil -->
+      <button class="sm:hidden  items-center" id="mobile-menu-button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16m-7 6h7" />
+        </svg>
+      </button>
+      
+    </div>
+  
+    <!-- Menú desplegable para móvil -->
+    <div class="hidden " id="mobile-menu" >
+      <ul class="flex flex-col space-y-4 items-center w-full text-white py-4 ">
+        <li><a href="#" class="hover:text-gray-300  ">Catálogo</a></li>
+        <li><a href="#" class="hover:text-gray-300">¿Quiénes somos?</a></li>
+        <li><a href="#" class="hover:text-gray-300">Contacto</a></li>
+        <li><a href="#" class="hover:text-gray-300">Iniciar Sesion</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+  <div class="banner">
+    <div class="container-banner">
+      <div class="text-section">
+          <div class="offer">
+              <span>20% OFERTAS</span>
+              <a href="#">Conoce guitarras en promoción ></a>
+          </div>
+          <div class="txt">
+              <h1>Comunica tu alma con una guitarra</h1>
+              <p>Si siempre has querido una guitarra, acércate a nosotros y te la enviamos, vivas donde vivas.</p>
+          </div>
+          <div class="contact">
+              <input type="email" placeholder="Ingresa tu correo" />
+              <button>Enviar</button>
+          </div>
+          <p class="terms">
+              Te contactaremos en 24 horas. Aceptamos todas las tarjetas de crédito y débito.
+              <a href="#">Conoce nuestros términos y condiciones.</a>
+          </p>
+      </div>
+      <div class="image-section-banner">
+          <img src="/img/imagen1.jpg" alt="Instrumentos musicales" />
+      </div>
+    </div>
+  </div>
+
+
+
+    <!-- productos -->
+    <div class="products">
+      <div class="container-products">
+          <header class="header-products">
+              <h1>NUEVAS</h1>
+              <h2>Guitarras recién llegadas</h2>
+              <p>¿Trovador o rockero? Triunfa como sea, con la guitarra correcta.</p>
+          </header>
+  
+          <div class="guitars-grid">
+              <!-- Guitar Card 1 -->
+              <div class="guitar-card">
+                  <div class="image-container">
+                      <img src="/img/guitar2.jpg" alt="PRS SE Custom 22">
+                      <span class="new-badge">Nueva</span>
+                  </div>
+                  <div class="card-products">
+                      <h3>PRS SE Custom 22 Electric Guitar</h3>
+                      <p>Guitarra personalizada, en barniz, cuerdas de nylon. Incluye amplificador individual. Conoce más de sus detalles técnicos</p>
+                      <div class="author-info">
+                          <img src="/img/author1.jpg" alt="Roel Aufderehar" class="author-image1">
+                          <div class="author-details">
+                              <p class="author-name">Roel Aufderehar</p>
+                              <p class="post-meta">Mar 16, 2020 · 6 min read</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Guitar Card 2 -->
+              <div class="guitar-card">
+                  <div class="image-container">
+                      <img src="/img/guitar1.jpg" alt="PRS SE Custom 22">
+                      <span class="new-badge">Nueva</span>
+                  </div>
+                  <div class="card-products">
+                      <h3>PRS SE Custom 22 Electric Guitar</h3>
+                      <p>Guitarra personalizada, en barniz, cuerdas de nylon. Incluye amplificador individual. Conoce más de sus detalles técnicos</p>
+                      <div class="author-info">
+                          <img src="/img/author2.jpg" alt="Roel Aufderehar" class="author-image">
+                          <div class="author-details">
+                              <p class="author-name">Roel Aufderehar</p>
+                              <p class="post-meta">Mar 16, 2020 · 6 min read</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Guitar Card 3 -->
+              <div class="guitar-card">
+                  <div class="image-container">
+                      <img src="/img/guitar2.jpg" alt="PRS SE Custom 22">
+                      <span class="new-badge">Nueva</span>
+                  </div>
+                  <div class="card-products">
+                      <h3>PRS SE Custom 22 Electric Guitar</h3>
+                      <p>Guitarra personalizada, en barniz, cuerdas de nylon. Incluye amplificador individual. Conoce más de sus detalles técnicos</p>
+                      <div class="author-info">
+                          <img src="/img/author1.jpg" alt="Roel Aufderehar" class="author-image1">
+                          <div class="author-details">
+                              <p class="author-name">Roel Aufderehar</p>
+                              <p class="post-meta">Mar 16, 2020 · 6 min read</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Contactar -->
+    <div class="container">
+      <div class="image-section">
+        <img src="/img/se�or.jpeg" alt="">
+      </div>
+      <div class="text-section">
+        <h2>TE AYUDAMOS A ELEGIR</h2>
+        <h1>Cuéntanos tus objetivos y podemos ayudarte a alcanzar ese nivel que buscas.</h1>
+        <p class="p-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, egestas tempus tellus etiam sed. Quam a scelerisque amet ullamcorper eu enim et fermentum, augue. Aliquet amet volutpat quisque ut interdum tincidunt duis.</p>
+        <div class="boton-container">
+          <a href="contacto">
+          Contactar ya mismo
+          <img class="btn-contac" src="contact.svg" alt="">
+         </a>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  
+
+
+  <footer class="grid   text-gray-500  py-10  space-y-7">
+    <div class="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 sm:gap-7 gap-2 mx-auto  px-4 py-10 sm:space-y-0 space-y-7 ">
+      <!-- Columna de redes sociales -->
+      
+        <div class="flex space-x-5 ">
+          <!-- Íconos -->
+          <a href="#" class="hover:text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 0C5.372 0 0 5.372 0 12c0 5.326 3.438 9.831 8.207 11.387.6.111.793-.26.793-.578v-2.178c-3.338.726-4.042-1.609-4.042-1.609-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.084-.729.084-.729 1.205.084 1.839 1.232 1.839 1.232 1.071 1.833 2.807 1.304 3.492.998.108-.775.418-1.305.76-1.604-2.665-.303-5.467-1.334-5.467-5.932 0-1.311.469-2.381 1.236-3.221-.123-.303-.535-1.524.118-3.176 0 0 1.008-.322 3.3 1.231.957-.266 1.983-.398 3.006-.403 1.023.005 2.049.137 3.007.403 2.29-1.554 3.296-1.231 3.296-1.231.655 1.653.243 2.874.12 3.176.769.84 1.236 1.91 1.236 3.221 0 4.61-2.806 5.625-5.479 5.921.43.37.815 1.103.815 2.222v3.293c0 .32.192.694.8.577C20.565 21.828 24 17.323 24 12 24 5.372 18.627 0 12 0z"/>
+            </svg>
+          </a>
+          
+          <a href="#" class="hover:text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M22.23 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.77 24 1.77 24h20.46c.96 0 1.77-.77 1.77-1.72V1.72C24 .77 23.23 0 22.23 0zM8.09 20.45H4.67V9.02h3.42v11.43zm-1.71-12.97c-1.1 0-1.99-.9-1.99-2.01s.89-2.01 1.99-2.01c1.11 0 2.01.9 2.01 2.01s-.9 2.01-2.01 2.01zm14.22 12.97h-3.42v-5.72c0-1.37-.02-3.13-1.91-3.13-1.91 0-2.2 1.49-2.2 3.02v5.83h-3.42V9.02h3.28v1.56h.05c.46-.87 1.57-1.78 3.24-1.78 3.46 0 4.1 2.28 4.1 5.25v6.4z"/>
+            </svg>
+          </a>
+          <a href="#" class="hover:text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M22.675 0h-21.35c-.729 0-1.325.596-1.325 1.325v21.35c0 .729.596 1.325 1.325 1.325h11.478v-9.294h-3.129v-3.622h3.129v-2.671c0-3.1 1.891-4.788 4.654-4.788 1.325 0 2.464.099 2.795.143v3.24l-1.918.001c-1.504 0-1.794.715-1.794 1.76v2.313h3.587l-.467 3.622h-3.12v9.294h6.116c.729 0 1.325-.596 1.325-1.325v-21.35c0-.729-.596-1.325-1.325-1.325z" />
+            </svg>
+          </a>
+          <a href="#" class="hover:text-gray-500">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.723-.951.564-2.005.974-3.127 1.195-.897-.955-2.178-1.555-3.594-1.555-2.722 0-4.932 2.21-4.932 4.932 0 .386.044.762.127 1.124-4.1-.205-7.732-2.17-10.165-5.158-.424.729-.666 1.577-.666 2.476 0 1.71.87 3.213 2.188 4.099-.807-.026-1.566-.248-2.228-.616v.062c0 2.388 1.698 4.384 3.946 4.834-.413.111-.849.171-1.296.171-.317 0-.626-.031-.928-.089.626 1.956 2.444 3.379 4.6 3.419-1.684 1.319-3.809 2.105-6.114 2.105-.398 0-.79-.023-1.177-.069 2.18 1.399 4.768 2.214 7.548 2.214 9.057 0 14.009-7.504 14.009-14.009 0-.213-.005-.425-.014-.637.961-.695 1.797-1.562 2.457-2.549z" />
+            </svg>
+          </a>
+        </div>
+      
+      <!-- Espacio en blanco -->
+      <br>
+      <!-- container GUITARRAS -->
+      <div class="space-y-5 ">
+        <h3 class="font-bold mb-2 ">GUITARRAS</h3>
+        <ul class=" space-y-2 ">
+          <li><a href="#" class="hover:text-gray-400">Catálogo</a></li>
+        </ul>
+      </div>
+       <!-- container SOPORTE -->
+      <div class="space-y-5">
+        <h3 class="font-bold mb-2 ">SOPORTE</h3>
+        <ul class=" space-y-2 ">
+          <li><a href="#" class="hover:text-gray-400">Precios y cotizaciones</a></li>
+          <li><a href="#" class="hover:text-gray-400">Certificaciones</a></li>
+          <li><a href="#" class="hover:text-gray-400">Guías</a></li>
+        </ul>
+      </div>
+
+      <div class="space-y-5">
+        <h3 class="font-bold mb-2">NOSOTROS</h3>
+        <ul class=" space-y-2 ">
+          <li><a href="#" class="hover:text-gray-400">About</a></li>
+          <li><a href="#" class="hover:text-gray-400">Blog</a></li>
+          <li><a href="#" class="hover:text-gray-400">Trabajos</a></li>
+          <li><a href="#" class="hover:text-gray-400">Prensa</a></li>
+          <li><a href="#" class="hover:text-gray-400">Partners</a></li>
+        </ul>
+      </div>
+      
+      <div class="space-y-5">
+        <h3 class="font-bold mb-2">LEGAL</h3>
+        <ul class=" space-y-2 ">
+          <li><a href="#" class="hover:text-gray-400">Privacidad</a></li>
+          <li><a href="#" class="hover:text-gray-400">Términos</a></li>
+        </ul>
+      </div>
+    </div>
+    <hr class="appearance-none border-none border-t-2 border-gray-200 ">
+    <div class="text-center  text-sm">
+      
+      © 2024. Todos los derechos reservados. Página de ejemplo.
+    </div>
+  </footer>
 </body>
+
+<script>
+  //Por favor , acomodar el script en su respectivo archivo
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+
+  //Abre el menu mobile
+  menuButton.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
 </html>
