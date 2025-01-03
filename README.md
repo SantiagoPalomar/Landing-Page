@@ -23,6 +23,8 @@ Adicionalmente, implementé los aspectos técnicos necesarios para darle vida al
 - **HTML5 y CSS3**: Base sólida para el desarrollo web.  
 - **Optimización de la carga**: Recursos optimizados para mejorar el rendimiento.  
 
+## 🖼️ Capturas del diseño
+
 ---
 
 ## 🛠️ Instalación
@@ -40,7 +42,7 @@ Sigue estos pasos para ejecutar la landing page en tu entorno local:
 Solo necesitas abrir el archivo index.html directamente en tu navegador preferido.
 
 ## 🤝 Equipo
-- Santiago Palomar Acosta
+- Santiago Palomar Acosta (Líder)
 - Maryori Santos
 - David Charris
 - Jenny Perez
